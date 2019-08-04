@@ -1,0 +1,31 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+
+
+
+
+.button{display:flex;
+justify-content:flex-end;
+    
+}
+
+#pageTitle{font-family:"Satisfy",cursive;
+color:blue;
+font-size:40px;
+    
+}
+.middleText{font-family:"Marck Script",cursive;
+font-size:20px;
+margin-top:2px;
+    
+}
+.header{margin-top:10px;
+    
+}
+.topButtons{
+margin-left:15px;
+margin-top:-20px;
+color:white;
+background-color:blue;
+    
+}
