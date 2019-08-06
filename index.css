@@ -1,0 +1,33 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+  
+
+.centerbuttons{
+  display: flex;
+  justify-content: center;
+}
+
+.postbtn{
+margin-left:10px;
+margin-top:150px;
+color:black;
+font-weight:bold;
+background-color:yellow;
+margin-right:5px;
+font-size: 15px;
+padding: 5px;
+}
+
+
+/* style for sign up modal */
