@@ -18,10 +18,13 @@
 <!-- Place all CSS for fonts in this file -->
    
  <link href='css\font.css' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    
+ 
 <div id="main-container-div">
 
         
@@ -30,7 +33,7 @@
 
 <a id="pageTitle" class="logo-title">ScriBBler</a> 
 <span class="Buttons">
- <button class="topButtons" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+ <button class="topButtons" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign Up</button>
  <button class="topButtons">Sign In</button>
  </span>
  <p class="middleText">Explore, Imagine, Create</p>
@@ -49,7 +52,7 @@
 
  
 <span class="centerbuttons">
-      <button class="postbtn" onclick="location.href='bloglist.html'">All Posts</button>
+      <button class="postbtn">All Posts </button>
       <button class="postbtn">Create Posts</button>
     </span>       
 </div>
@@ -67,9 +70,31 @@
  </div>
 
     
-<div >
+
+<div id="myModal" class="modal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+<p class="heading" align="center"> Get Started</p>
+
+<hr color="solid black">
+
+
+<label for="fullname"><b> Full Name </b></label>
+<input type="text" class="inputfullname" placeholder="Enter Full Name" required/><br> </br>
+<label for="username"><b>UserName </b></label>
+<input type="text" class="inputusername" placeholder="Enter UserName" required/><br> </br>    
+<label for="password"><b>Password </b></label>
+<input type="password" class="inputpassword" placeholder="Enter Password" required/><br> </br>
+<label for="confirm password"><b>Confirm Password </b></label>
+<input type="password" class="inputconfirm password" placeholder="Confirm Password" required/><br></br>
+<button type="submit" class="signupbtn" id="01">Sign Up</button>
+</div>
+
 <!-- Insert code for Sign Up modal here -->
-  
+
 	
 </div>
 
@@ -81,8 +106,6 @@
 
     
 </div>
-
-	
 <!-- Place all Javascript for header in this file -->
 	
 <script src="js\header.js"></script>
@@ -92,6 +115,9 @@
 <script src="js\index.js">
 </script>
 
+   
+
+	
 
 </body>
 
