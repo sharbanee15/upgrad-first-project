@@ -1,0 +1,62 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.butt{
+    background-color:#0A04E0;
+    color:white;
+    padding:7px 20px;
+    font-size:14px;
+    font-family: Arial, Helvetica, sans-serif;
+ }       
+ #logo{
+    color:#4560B6;
+    font-family: 'satisfy',cursive;
+    font-size:47px;
+ }     
+ #middleText{
+     font-family: 'Marck Script',cursive;
+     font-size: 15px;
+ }
+
+ /* CSS for SignIn and SignUp Modal */
+ .label{
+   font-family:Bahnschrift Condensed;
+   font-weight:bold;
+ }
+ .override{
+    background-color: #f1f1f1!important;
+    border:none!important;
+    border-radius: 0px!important;
+ }
+ .override::placeholder{
+   font-family:Bahnschrift Condensed;
+ }
+ .title{
+    font-family:Bahnschrift Condensed!important;
+    font-size:27px!important;
+ }
+ .modal-dialog{
+   
+    width:30%!important;
+    line-height:180%!important;
+ }
+ .modal-header{
+    border-bottom: 1px solid gray!important;
+    margin-left: 15px!important;
+    margin-bottom: 10px;
+    margin-right: 15px!important;
+ }
+ .close{
+    font-size:38px!important;
+ }
+ .modal-content{
+    border-radius:0px!important;
+ }
+ .buttonBorder{
+    border-radius: 0px!important;
+ }
+ .footer{
+    text-align:center;
+ }
+ #signupFooter{
+    color:rgb(61, 61, 219)!important;
+ }

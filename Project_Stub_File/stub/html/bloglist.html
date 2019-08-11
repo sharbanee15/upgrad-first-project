@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>    
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+     <!-- Bootstrap CSS CDN -->
+     <link rel="stylesheet" href="../css/bootstrap-min.css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        #middleText{
+            color:white;
+        }
+    </style>
+    
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main-container-div">
+        <div class="header">
+                                
+            <!-- Insert code for Sign Up, Sign In button here. 
+                 Add code for "ScriBBler" heading and the sub-heading -->
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="mr-auto p-2 bd-highlight">
+                        <h2 id="logo">ScriBBler</h2>
+                        <p id="middleText">Explore. Imagine. Create</p>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <button class="butt" data-toggle="modal" data-target="#signInModal" onclick="signIn()" >Sign In</button>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <button class="butt" data-toggle="modal" data-target="#signUpModal" onclick="signUp1()">Sign Up</button>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    <div>
+        <!-- Insert code for Sign In modal here -->
+        <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title title w-100" id="exampleModalLongTitle" >Welcome Back!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+
+                </div>
+                <div class="modal-body">
+                  
+                  <form>
+                      <div class="form-group">
+                          <label class="label">Username</label>
+                          <input class="form-control override" type="text" name="" id="uname" placeholder="Enter Username" required>
+                      </div>
+                      <div class="form-group">
+                          <label class="label">Password</label>
+                          <input class="form-control override" type="password" name="" id="pass" placeholder="Enter Password" required>
+                      </div>
+                     
+                      <div>
+                         <button type="submit" class="btn btn-success form-control buttonBorder">Sign In</button>
+                      </div>
+                  </form> <br>
+                  <p class="footer"><b>Not a member? </b><a id="signupFooter" href="#" data-toggle="modal" data-dismiss="modal" data-target="#signUpModal"><b>Sign Up</b></a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <div>
+
+        <!-- Insert code for Sign Up modal here -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title title w-100" id="exampleModalLongTitle" >Get Started</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+
+                </div>
+                <div class="modal-body">
+                  
+                  <form>
+                      <div class="form-group ">
+                          <label class="label">Full Name</label>
+                          <input class="form-control override" type="text" name="" id="fname" placeholder="Enter Full Name" required>
+                      </div>
+                      <div class="form-group">
+                          <label class="label">Username</label>
+                          <input class="form-control override" type="text" name="" id="uname1" placeholder="Enter Username" required>
+                      </div>
+                      <div class="form-group">
+                          <label class="label">Password</label>
+                          <input class="form-control override" type="password" name="" id="pass1" placeholder="Enter Password" required>
+                      </div>
+                      <div class="form-group">
+                          <label class="label">Confirm Password</label>
+                          <input class="form-control override" type="password" name="" id="confPass" placeholder="Confirm Password" required>
+                      </div>
+                      <div>
+                            <button type="submit" class="btn btn-success form-control buttonBorder" onclick=signUpModal()>Sign Up</button>
+                      </div>
+                  </form> 
+                </div>
+               </div>
+             </div>
+        </div>
+</div>
+<div class="allPostsContainer">
+    <div class="d-flex justify-content-around">
+     <div class="p-4 bd-highlight"></div>
+      <div class="post bd-highlight" id="post1">
+        <div class="post-left">
+            <p class="post-username">Jimi</p>
+        </div>
+        <div class="post-content">
+
+            <!-- Insert code for Trash icon here -->
+            <a data-toggle="modal" data-target="#deleteModal" class="postClass"><i class="fa fa-trash trash"></i></a>
+
+            <p class="post-title  ">Hello there ! This is Post 1. </p>
+            <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+            
+            <!-- Insert code for ... icon here -->
+            <a href="./post.html"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+        </div>
+      </div>
+      <!-- <div class="col-sm-1"></div> -->
+      <div class="p-5 bd-highlight"></div>
+      <div class="post bd-highlight" id="post2">
+        <div class="post-left">
+            <p class="post-username">Jimi</p>
+        </div>
+        <div class="post-content" >
+
+                <!-- Insert code for Trash icon here -->
+                <a data-toggle="modal" data-target="#deleteModal" class="postClass"><i class="fa fa-trash trash"></i></a>
+
+                <p class="post-title">Hello there ! This is Post 2. </p>
+                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+                 
+            
+            <!-- Insert code for ... icon here -->
+            <a href="./post.html"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+        </div>
+      </div>
+      <div class="p-4 bd-highlight"></div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-around">
+    <div class="p-4 bd-highlight"></div>
+    <div class="post bd-highlight" id="post3">
+        <div class="post-left">
+            <p class="post-username">Jimi</p>
+        </div>
+        <div class="post-content" >
+
+            <!-- Insert code for Trash icon here -->
+            <a data-toggle="modal" data-target="#deleteModal" class="postClass"><i class="fa fa-trash trash"></i></a>
+
+                <p class="post-title">Hello there ! This is Post 3. </p>
+                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+               
+            <!-- Insert code for ... icon here -->
+            <a href="./post.html"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+
+        </div>
+    </div>
+    <div class="p-5 bd-highlight"></div>
+    <div class="post bd-highlight" id="post4">
+        <div class="post-left">
+            <p class="post-username">Jimi</p>
+        </div>
+        <div class="post-content">
+
+            <!-- Insert code for Trash icon here -->
+            <a data-toggle="modal" data-target="#deleteModal" class="postClass"><i class="fa fa-trash trash"></i></a>
+
+                <p class="post-title">Hello there ! This is Post 4. </p>
+                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+
+            <!-- Insert code for ... icon here -->
+            <a href="./post.html"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+
+        </div>
+    </div>
+    <div class="p-4 bd-highlight"></div>
+    </div><br>
+<div class="d-flex justify-content-around">
+       <div class="p-4 bd-highlight"></div>
+       <div class="col-sm-3"></div>
+       <div class="post bd-highlight" id="post5">
+            <div class="post-left">
+                <p class="post-username">Jimi</p>
+            </div>
+            <div class="post-content" >
+
+                <!-- Insert code for Trash icon here -->
+                <a data-toggle="modal" data-target="#deleteModal" class="postClass"><i class="fa fa-trash trash"></i></a>
+
+                    <p class="post-title">Hello there ! This is Post 5. </p>
+                    <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+                
+                <!-- Insert code for ... icon here -->
+                
+                <a href="./post.html"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+                    
+            
+            </div>
+        </div>
+    <div class="col-sm-3"></div>
+    <div class="p-4 bd-highlight"></div>
+        <div>
+
+            <!-- Insert code for delete modal here -->
+
+            <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document"><br>
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h6 class="deleteHeading">Are you sure you want to delete this post?</h6>
+                          <div class="d-flex justify-content-around">
+                          <button class="yesButt bd-highlight" data-id="gvsdn" onclick="deleteButton()">Yes</button>
+                          <button class="noButt bd-highlight" data-dismiss="modal" >No</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+
+        </div>
+        
+</div>
+    <script src="..\js\bloglist.js">  </script>
+    <script src="..\js\header.js"> </script>
+     <!-- Bootstap JS CDN -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

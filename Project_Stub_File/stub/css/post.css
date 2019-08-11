@@ -1,0 +1,118 @@
+.blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+.blogText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.blogAuthor {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+}
+.blogContent{
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+#blogTitleNew{
+    display:flex;
+    justify-content: center;
+}
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+.editButton{
+    float:right;
+    color:white;
+    
+    background-color:rgb(238, 82, 108);
+    border:none;
+    padding:6px 12px 6px 12px;
+    font-size:16px;
+    box-shadow: 0px 3px 5px #d48383;
+}
+.saveButton{
+    float:right;
+    color:white;
+    background-color:rgb(238, 82, 108);
+    border:none;
+    padding:7px 12px 7px 12px;
+    font-size:15px;
+    display:none;
+    box-shadow: 0px 3px 5px #d48383;
+}
+#likePara{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:14px;
+    font-weight:bold;
+    position: absolute;
+    margin-top:10px;
+}
+.likeButton{
+        color:white;
+        position: relative;
+        background-color:rgb(240, 61, 91);
+        border:none;
+        padding:6px 33px 6px 33px;
+        font-size:16px;
+        border-radius: 2px;
+        font-family: Helvetica;
+        box-shadow: 0px 3px 5px #d48383;
+    
+}
+#commentBox{
+    font-size:14px;
+    font-family: 'Courier New';
+    position:relative;
+}
+.commentButton{
+    color:white;
+    position: absolute;
+    background-color:rgb(240, 61, 91);
+    border:none;
+    margin-top:15px;
+    padding:6px 18px 6px 18px;
+    font-size:15px;
+    box-shadow: 0px 3px 5px #d48383;
+}
+#allComments{
+    font-weight:bold;
+    font-size:17px;
+    font-family: 'Times New Roman';
+}
+#commentSection{
+    background-color:#E3E4E6;
+    margin-bottom:20px;
+    min-height:20px;
+    width:68%;
+    padding:10px;
+}
+/* New comments Added */
+.newDiv{
+    background: white;
+    margin:10px;
+    padding:13px 10px 13px 10px;
+    font-family: 'Times New Roman';
+}
+/* Media Queries */
+@Media only screen and (max-width:990px){
+    #commentBox{
+        width:66%;
+    }
+}
+/* @Media only screen and (max-width:768px){
+    #commentBox{
+        font-size:8px;
+    }
+}
+@Media only screen and (max-width:529px){
+    #commentBox{
+        font-size:6px;
+    }
+}
+@Media only screen and (max-width:529px){
+    #commentBox{
+        font-size:4px;
+    }
+} */

@@ -1,0 +1,165 @@
+/* Post Blogs CSS */
+.post {
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: #fff;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: 0px 20px 5px 40px;
+    float:left;
+    border-radius: 15px;
+}
+
+.post-left {
+        width: 15%;            
+        max-width: 15%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+}
+.post-content {
+        width: 75%;           
+        display: table-cell;
+        text-align: left;
+        background-color: #E8E8E8;
+        color: #000000;
+        border-radius: 0 15px 15px 0;
+        padding: 0 20px;  
+        height:100px!important;          
+}
+.post-title{
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    color: #2b312b;
+    margin-top:20px!important;
+    font-size: 23px;
+    height: 25px;
+    }
+.post-more {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.post-desc{
+    height: 4.2em!important;
+    line-height:1.4rem!important; 
+    overflow:hidden;
+    margin-bottom: 16px !important;
+    font-size:16px;
+    font-family: 'Times New Roman', Times, serif;
+    /* padding-bottom: 15px!important; */
+    
+}
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+    color: #fff;
+    background-color: orange!important;
+    background-size: 2000% 2000%;
+}
+.allPostsContainer {
+    height: 100%;
+    width: 100%;
+
+}
+/* ... Icon CSS */
+.ellipsis{
+    font-size:20px!important;
+    float:right;
+    color:rgb(36, 33, 33);
+}
+/* Trash Icon CSS */
+.trash{
+    font-size:28px!important;
+    float:right;
+    cursor:pointer;
+    margin-top:10px!important;
+}
+
+/* Delete Modal CSS */
+.noButt{
+    background-color:rgb(83, 173, 83);
+    color:white;
+    padding:7px 60px 7px 60px;
+    float:right;
+    margin-bottom:15px;
+    border:none;
+}
+.yesButt{
+    background-color:red;
+    padding:7px 60px 7px 60px;
+    color:white;
+    margin-bottom:15px;
+    float:left;
+    border:none;
+}
+.deleteHeading{
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align:center;
+    font-weight:bold;
+}
+/* Media Queries */
+@media only screen and (max-width: 512px) {
+    .post {
+      margin: 0px 10px 10px 10px!important;
+    }
+    .post-title{
+        overflow:hidden;
+    }
+  }
+@media only screen and (max-width: 1123px) {
+   
+    .post-title{
+        overflow:hidden;
+        font-size:22.5px;
+    }
+    .noButt{
+        padding:7px 50px 7px 50px;
+    }
+    .yesButt{
+        padding:7px 50px 7px 50px;
+    }
+  }
+@media only screen and (max-width: 428px) {
+    .post {
+      margin:0px 2px 5px 10px!important;
+    }
+  }
+@media only screen and (max-width: 400px) {
+    .post {
+      display:block!important;
+    }
+  }
+@media only screen and (max-width: 978px) {
+  .noButt{
+    padding:7px 35px 7px 35px;
+  }
+  .yesButt{
+    padding:7px 35px 7px 35px;
+  }
+}
+@media only screen and (max-width: 776px) {
+    .noButt{
+      padding:7px 25px 7px 25px;
+    }
+    .yesButt{
+      padding:7px 25px 7px 25px;
+    }
+  }
+  @media only screen and (max-width: 631px) {
+    .noButt{
+      padding:7px 10px 7px 10px;
+    }
+    .yesButt{
+      padding:7px 10px 7px 10px;
+    }
+  }

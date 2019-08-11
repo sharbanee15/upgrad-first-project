@@ -1,0 +1,31 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+  
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+
+/* CSS for center buttons */
+.centerDiv{
+   margin-top:10%; 
+}
+.centerButt{
+   background-color:#D1B641  ;
+   padding:7px 16px;
+   font-size:14px;
+   font-weight:bold;
+   display:flex;
+   align-items: center;
+   font-family:Arial, Helvetica, sans-serif;
+}    
+#underline{
+   text-decoration: none;
+ 
+}
